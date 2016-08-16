@@ -1,0 +1,30 @@
+[
+    {
+      "value": "1_rent",
+      "name": "Rent"
+    },
+    {
+      "value": "2_tele",
+      "name": "Telephone"
+    },
+    {
+      "value": "3_util",
+      "name": "Utilities"
+    },
+    {
+      "value": "4_maint",
+      "name": "Maintenance & Repair"
+    },
+    {
+      "value": "5_furnish",
+      "name": "Furnishings"
+    },
+    {
+      "value": "6_improve",
+      "name": "Improvements"
+    },
+    {
+      "value": "7_help",
+      "name": "Household Help"
+    }
+]
