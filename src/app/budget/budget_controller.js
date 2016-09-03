@@ -14,6 +14,7 @@
 		vm.slctOptions = [];
 		vm.incomes = [];
 		vm.incomeOptions = [];
+		vm.housing = 0;	
 
 		// Calls factory for the housing expense select options
 		vm.slctOptions = slctListService.getList();
@@ -42,18 +43,31 @@
    			vm.incomeAmount = null;
 		};
 
-		// Removes the user input from the table
-		vm.removeRow = function(type){				
-			// if ('income' = 'income')
+		// Removes the user input from the expense table
+		vm.removeRowEx = function(type){				
 			var index = -1;		
 			var expenseArr = eval( vm.expenses );
+
 			for( var i = 0; i < expenseArr.length; i++ ) {
 				if( expenseArr[i].type === type ) {
 					index = i;
 					break;
 				}
-			}
+			}	
 			vm.expenses.splice( index, 1 );		
+		};
+
+		// Removes the user input from the income table
+		vm.removeRowIn = function(type, amount){				
+			var index = -1;		
+			var incomeArr = eval( vm.incomes );
+			for( var i = 0; i < incomeArr.length; i++ ) {
+				if( incomeArr[i].type === type ) {
+					index = i;
+					break;
+				}
+			}
+			vm.incomes.splice( index, 1 );		
 		};
 	};
 })();
